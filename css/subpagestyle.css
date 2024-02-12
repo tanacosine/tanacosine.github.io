@@ -65,10 +65,9 @@ body {
 
 .pagetop::after {
   content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 10%;
+  position: fixed;
+  left: 50lvw;
+  width: 5%;
   background: linear-gradient(to right, #333, #eee);
 
 .catheader {
