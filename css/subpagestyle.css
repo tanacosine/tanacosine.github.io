@@ -51,17 +51,25 @@ body {
 /* page header */
 
 .pagetop {
- width: 100lvw;
+ width: 50lvw;
  height: 50lvh;
  background-color: #333;
 }
 
 .titlecont {
- width: 50vw;
+ width: 50lvw;
  height: 40lvh;
  padding-top: 10lvh;
  background-color: #333;
 }
+
+.pagetop::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 10%;
+  background: linear-gradient(to right, #333, #eee);
 
 .catheader {
  font-family: 'Nunito', sans-serif;
