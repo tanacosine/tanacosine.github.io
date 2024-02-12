@@ -63,13 +63,6 @@ body {
  background-color: #333;
 }
 
-.pagetop::after {
-  content: "";
-  position: fixed;
-  left: 50lvw;
-  width: 5%;
-  background: linear-gradient(to right, #333, #eee);
-
 .catheader {
  font-family: 'Nunito', sans-serif;
  color: #eee;
