@@ -51,7 +51,7 @@ body {
 /* page header */
 
 .pagetop {
- width: 50lvw;
+ width: 100lvw;
  height: 50lvh;
  background-color: #333;
 }
@@ -61,6 +61,13 @@ body {
  height: 40lvh;
  padding-top: 10lvh;
  background-color: #333;
+}
+
+.headerimage {
+  float: right;
+  width: 50lvw;
+  height: 50lvh;
+  background-color: #333;
 }
 
 .catheader {
