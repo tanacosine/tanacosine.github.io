@@ -1,0 +1,27 @@
+body {
+    font-family: 'Lexend',sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #111;
+    overflow: hidden;
+}
+
+.navbar .homepagelink {
+    display: flex;
+    justify-content: left;
+}
+
+.navbar .navigationlink {
+    display: flex;
+    justify-content: right;
+}
+
+.navitem {
+    margin: 20px 30px;
+    font-size: 20pt;
+    font-weight: 700;
+}
+
