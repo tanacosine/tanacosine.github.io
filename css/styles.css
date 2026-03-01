@@ -21,7 +21,8 @@ body {
 
 .navitem {
     margin: 20px 30px;
-    font-size: 20pt;
-    font-weight: 700;
+    font-size: 14pt;
+    font-weight: 400;
+    color:white;
 }
 
