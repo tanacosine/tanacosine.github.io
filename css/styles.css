@@ -79,11 +79,14 @@ body {
 
 .project-thumbnail > img {
     max-width: 100%;
+    align-self: center;
 }
 
 .footer {
-    margin: auto;
+    display: grid;
+    justify-items: center;
 }
+
 #footericon {
     width: 80px;
     border-radius: 40px;
