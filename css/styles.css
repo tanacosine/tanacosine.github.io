@@ -64,6 +64,11 @@ body {
     border-radius: 20px;
 }
 
+#desktopexptext {
+    font-size: 0.75em;
+    color: rgba(240, 248, 255, 0.75);
+}
+
 .content-wrap {
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -74,4 +79,16 @@ body {
 
 .project-thumbnail > img {
     max-width: 100%;
+}
+
+.footer {
+    margin: auto;
+}
+#footericon {
+    width: 80px;
+    border-radius: 40px;
+}
+
+#footertext {
+    color: rgba(69, 69, 69, 0.5);
 }
