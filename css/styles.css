@@ -83,7 +83,7 @@ body {
 }
 
 .content-wrap > * {
-    color: light-dark(#000, #fff)
+    color: light-dark(#000, #fff);
 }
 
 .project-thumbnail {
