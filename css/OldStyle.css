@@ -35,7 +35,7 @@ body {
  padding-right: 10px;
 }
 
-.navbuttons:hover {
+.navbuttons: {
  background-color: #bbb;
  color: #eee;
  border-radius: 30px;
