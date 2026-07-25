@@ -122,10 +122,6 @@ body {
     margin-left: 20px;
 }
 
-.blog-wrap {
-    margin: 50px 50px;
-}
-
 .content-wrap > * {
     color: light-dark(#000, #fff);
 }
@@ -174,7 +170,7 @@ body {
     display: flex;
     justify-content: left;
     margin-top: 20px;
-    margin-left: 5px;
+    margin-left: 10px;
 }
 
 .width-option {
@@ -187,6 +183,13 @@ body {
     color:#000;
 }
 
+
+.blog-content > span > img {
+    float: right;
+    height: 30%;
+    max-height:200px;
+    margin-left: 20px;
+}
 @media only screen and (max-width: 850px) {
     #homecont > * {
         font-size: 0;
@@ -232,13 +235,11 @@ body {
         border-bottom: 1px dotted;
         border-color: light-dark(black, white);
     }
-
-    .blog-content > span > img {
+.blog-content > span > img {
     float: none;
-    display:block;
     max-width: 70%;
-    max-height:100%;
+    max-height: 100%;
     margin: 20px auto;
 }
-}
 
+}

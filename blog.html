@@ -3,10 +3,21 @@
 <head>
  <title>tanacosine's blog</title>
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <link id="css-stylesheet" href="css/max-width.css" rel="stylesheet">
+ <link id="css-stylesheet" href="css/styles.css" rel="stylesheet">
  <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+<style>
+:root {
+  --blog-width: calc(100lvw - 100px);
+}
+
+.blog-wrap {
+  width: min(calc(100lvw - 100px), var(--blog-width));
+  margin: 50px max(50px, calc((100lvw - var(--blog-width))/2));
+}
+
+</style>
 </head>
 
 <body>
@@ -35,13 +46,13 @@
 
 <div class="width-buttons">
   <p>Select content width: </p>
-  <button class="width-option" id="narrow-port" onclick="document.getElementById('css-stylesheet').setAttribute('href','css/narrow-width.css')">NARROW</button>
-  <button class="width-option" id="medium-port" onclick="document.getElementById('css-stylesheet').setAttribute('href','css/medium-width.css')">MEDIUM</button>
-  <button class="width-option" id="wide-port" onclick="document.getElementById('css-stylesheet').setAttribute('href','css/wide-width.css')">WIDE</button>
-  <button class="width-option" id="max-port" onclick="document.getElementById('css-stylesheet').setAttribute('href','css/max-width.css')">MAX</button>
+  <button class="width-option" id="narrow-port" onclick="setwidth(1)">NARROW</button>
+  <button class="width-option" id="medium-port" onclick="setwidth(2)">MEDIUM</button>
+  <button class="width-option" id="wide-port" onclick="setwidth(3)">WIDE</button>
+  <button class="width-option" id="max-port" onclick="setwidth(4)">MAX</button>
 </div>
 
-<div class="blog-wrap">
+<div class="blog-wrap" id="blog-wrapper">
     <div class="blog-header" ID="2026JUL21">
         <h1>2026 JULY 21</h1>
         <h3><i>A LUGUBRIOUS START TO THIS BLOG</i></h3>
@@ -67,6 +78,63 @@
   <img id="footericon" src="images/mainicon.jpg" alt="logo">
   <p ID="footertext"><i>You've reached the end.</i></p>
  </div>
+
+<script>
+  function setwidth(w) {
+    var r = document.querySelector(':root');
+    var na = document.getElementById("narrow-port").style;
+    var me = document.getElementById("medium-port").style;
+    var wi = document.getElementById("wide-port").style;
+    var max = document.getElementById("max-port").style;
+    switch (w) {
+      case 1:
+        r.style.setProperty('--blog-width', '500px');
+        na.backgroundColor = "whitesmoke";
+        na.color = "#000";
+        me.backgroundColor = "";
+        me.color = "";
+        wi.backgroundColor = "";
+        wi.color = "";
+        max.backgroundColor = "";
+        max.color = "";
+        break;
+      case 2:
+        r.style.setProperty('--blog-width', '1000px');
+        me.backgroundColor = "whitesmoke";
+        me.color = "#000";
+        na.backgroundColor = "";
+        na.color = "";
+        wi.backgroundColor = "";
+        wi.color = "";
+        max.backgroundColor = "";
+        max.color = "";
+        break;
+      case 3:
+        r.style.setProperty('--blog-width', '1500px');
+        wi.backgroundColor = "whitesmoke";
+        wi.color = "#000";
+        me.backgroundColor = "";
+        me.color = "";
+        na.backgroundColor = "";
+        na.color = "";
+        max.backgroundColor = "";
+        max.color = "";
+        break;
+      case 4:
+        r.style.setProperty('--blog-width', 'calc(100lvw - 100px)');
+        max.backgroundColor = "whitesmoke";
+        max.color = "#000";
+        me.backgroundColor = "";
+        me.color = "";
+        na.backgroundColor = "";
+        na.color = "";
+        wi.backgroundColor = "";
+        wi.color = "";
+    }
+
+    }
+
+</script>
 </body>
 
 </html>
