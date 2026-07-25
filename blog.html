@@ -3,7 +3,7 @@
 <head>
  <title>tanacosine's blog</title>
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <link href="css/styles.css" rel="stylesheet">
+ <link id="css-stylesheet" href="css/max-width.css" rel="stylesheet">
  <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
@@ -26,12 +26,20 @@
     <p class="home" id="blogintro">This is the blog section of my website. To be updated infrequently. Enjoy your stay!<br>
       <span ID="desktopexptext"><i>Desktop experience recommended.</i></span></p>
  </div>
+</div>
 <div id="mobablogtext">
     <h1 class="home">The Blog</h1>
     <p class="home" id="mobahomeintro">This is the blog section of my website. To be updated infrequently. Enjoy your stay!<br>
       <span ID="mobadesktopexptext"><i>Desktop experience recommended.</i></span></p>
   </div>
 
+<div class="width-buttons">
+  <p>Select content width: </p>
+  <button class="width-option" id="narrow-port" onclick="document.getElementById('css-stylesheet').setAttribute('href','css/narrow-width.css')">NARROW</button>
+  <button class="width-option" id="medium-port" onclick="document.getElementById('css-stylesheet').setAttribute('href','css/medium-width.css')">MEDIUM</button>
+  <button class="width-option" id="wide-port" onclick="document.getElementById('css-stylesheet').setAttribute('href','css/wide-width.css')">WIDE</button>
+  <button class="width-option" id="max-port" onclick="document.getElementById('css-stylesheet').setAttribute('href','css/max-width.css')">MAX</button>
+</div>
 
 <div class="blog-wrap">
     <div class="blog-header" ID="2026JUL21">
