@@ -115,6 +115,11 @@ body {
     color: light-dark(#000, #fff);
 }
 
+.blog-content > span > * > li {
+    line-height: 175%;
+    color: light-dark(#000, #fff);
+}
+
 .blog-content > span > img {
     float: right;
     height: 30%;
