@@ -105,27 +105,32 @@ body {
 .project-annotation > p {
     line-height: 150%;
 }
+
 .blog-content{
     padding-bottom: 20px;
     border-bottom: 1px dotted;
     border-color: light-dark(black, white);
-}
-.blog-content > span > p {
+
+    span {
+        p {
     line-height: 200%;
     color: light-dark(#000, #fff);
-}
+    }
 
-.blog-content > span > * > li {
+    ul > li {
     line-height: 175%;
     color: light-dark(#000, #fff);
-}
+    }
 
-.blog-content > span > img {
+    img {
     float: right;
     height: 30%;
     max-height:200px;
     margin-left: 20px;
+    }
 }
+}
+
 
 .content-wrap > * {
     color: light-dark(#000, #fff);
@@ -189,13 +194,6 @@ body {
     color:#000;
 }
 
-
-.blog-content > span > img {
-    float: right;
-    height: 30%;
-    max-height:200px;
-    margin-left: 20px;
-}
 @media only screen and (max-width: 850px) {
     #homecont > * {
         font-size: 0;
