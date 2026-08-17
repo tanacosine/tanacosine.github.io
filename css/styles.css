@@ -129,6 +129,13 @@ body {
     margin-left: 20px;
     }
 }
+
+img {
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    max-width:min(700px, var(--blog-width));
+}
 }
 
 
